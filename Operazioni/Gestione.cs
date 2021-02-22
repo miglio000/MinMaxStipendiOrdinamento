@@ -25,6 +25,7 @@ namespace Operazioni
         {
             for(int i = 0; i < array.Length; i++)
             {
+                Console.Write($"{i}°: ");
                 array[i] = Convert.ToDouble(Console.ReadLine());
             }
         }
