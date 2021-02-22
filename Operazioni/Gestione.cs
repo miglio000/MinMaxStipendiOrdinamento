@@ -21,12 +21,11 @@ namespace Operazioni
                 }
             }
         }
-        public static void InserisciRandom(double[] array)
+        public static void LeggiArray(double[] array)
         {
-            Random r = new Random();
             for(int i = 0; i < array.Length; i++)
             {
-                array[i] = r.NextDouble() * 1000;
+                array[i] = Convert.ToDouble(Console.ReadLine());
             }
         }
         public static void StampaArray(double[] array)

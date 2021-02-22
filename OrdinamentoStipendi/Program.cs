@@ -9,7 +9,8 @@ namespace OrdinamentoStipendi
             Console.WriteLine("Inserisci dimensione array: ");
             int x = Convert.ToInt32(Console.ReadLine());
             double[] array = new double[x];
-            Gestione.InserisciRandom(array);
+            Console.WriteLine("Inserisci stipendi: ");
+            Gestione.LeggiArray(array);
             Gestione.BubbleSort(array, x);
             Console.WriteLine($"Gli stipendi ordinati sono: ");
             Gestione.StampaArray(array);
